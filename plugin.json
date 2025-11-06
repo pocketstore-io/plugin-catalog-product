@@ -1,0 +1,6 @@
+{
+  "vendor": "pocketstore-io",
+  "name": "catalog-product",
+  "type": "plugin",
+  "prio": 100
+}
