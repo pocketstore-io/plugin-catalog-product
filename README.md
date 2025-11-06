@@ -1,1 +1,1 @@
-# Plugin PocketStore - hello-world
+# Plugin PocketStore - catalog product
