@@ -1,0 +1,10 @@
+{
+  "checkout": {
+    "add-to-cart": "In den Warenkorb legen"
+  },
+  "catalog": {
+    "product": {
+      "in-stock": "Im Lager"
+    }
+  }
+}
