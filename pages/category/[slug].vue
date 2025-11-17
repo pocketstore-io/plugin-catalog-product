@@ -50,7 +50,7 @@
 
 <script setup>
 import { useRoute } from "vue-router";
-import { usePocketBase } from "~/util/pocketbase";
+import { usePocketBase } from "~/utils/pocketbase";
 
 const { t } = useI18n();
 const pb = usePocketBase();

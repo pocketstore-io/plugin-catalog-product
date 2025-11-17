@@ -69,7 +69,7 @@
 <script lang="ts" setup>
 import { useRoute } from "vue-router";
 import Review from "../catalog/Review.vue";
-import { usePocketBase } from "~/util/pocketbase";
+import { usePocketBase } from "~/utils/pocketbase";
 import { useLocalStorage } from "@vueuse/core";
 import Carousel from "./tab/Carousel.vue";
 

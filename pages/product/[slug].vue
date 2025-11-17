@@ -59,7 +59,7 @@
 </template>
 
 <script lang="ts" setup>
-import { usePocketBase, usePocketBaseUrl } from "~/util/pocketbase";
+import { usePocketBase, usePocketBaseUrl } from "~/utils/pocketbase";
 import { useHead } from "@unhead/vue";
 
 const route = useRoute();

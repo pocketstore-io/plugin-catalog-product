@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts" setup>
-import { usePocketBase } from "~/util/pocketbase";
+import { usePocketBase } from "~/utils/pocketbase";
 import config from "@/pocketstore.json";
 import type { RecordModel } from "pocketbase";
 import slugify from "slugify";
