@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import ProductCard from "@/components/catalog/ProductCard.vue";
 import { ref, computed, watch } from "vue";
-import { addBreadcrumb } from "@/utils/breadcrumbs";
+import { addBreadcrumb } from "@/utils/breadcrumb";
 import { usePocketBase } from "@/utils/pocketbase";
 import type PocketBase from "pocketbase";
 import { useRoute } from "vue-router";
