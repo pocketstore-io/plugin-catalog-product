@@ -62,7 +62,6 @@ const products = ref([]);
 const brands = ref([]);
 const tags = ref("");
 
-const menu = ref(true);
 const query = ref("");
 const brand = ref("all");
 const selected = ref("all");
