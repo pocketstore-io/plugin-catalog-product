@@ -5,6 +5,11 @@
   "checkout": {
     "add-to-cart": "In den Warenkorb legen"
   },
+  "product": {
+    "stock": {
+      "empty": "Momentan nicht auf Lager"
+    }
+  },
   "catalog": {
     "product": {
       "in-stock": "Im Lager"
