@@ -9,7 +9,7 @@
       <p class="text-sm">{{ item.description }}</p>
       <CustomFields v-if="item.config" :fields="item.config"/>
       <section class="flex justify-between">
-        <ProductStock :quantity="stock.qty"/>
+        <ProductStock :quantity="stock.quantity"/>
         <ProductAddToCart :product="item" :qty="stock.qty" :stock="stock"/>
       </section>
 
@@ -46,7 +46,7 @@ const load = async () => {
 };
 
 watch(() => item.value.id, async () => {
-  return (
+  stock.value = (
       await pb.collection("product_stocks").getList(1, 1, {
         filter: 'product="' + item.value.id + '"',
       })
