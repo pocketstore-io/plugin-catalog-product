@@ -9,29 +9,27 @@
       <p class="text-sm">{{ item.description }}</p>
       <CustomFields v-if="item.config" :fields="item.config"/>
       <section class="flex justify-between">
-        <ProductStock :quantity="stock.qty" />
+        <ProductStock :quantity="stock.qty"/>
         <ProductAddToCart :product="item" :qty="stock.qty" :stock="stock"/>
       </section>
 
     </div>
     <div class="col-span-6">
-      <ProductDetails :identifier="item.id" />
-      <ProductTabs identifier="bowling"/>
+      <ProductDetails :identifier="item.id"/>
+      <ProductTabs :identifier="item.id"/>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import {usePocketBase, usePocketBaseUrl} from "~/utils/pocketbase";
+import {usePocketBase} from "~/utils/pocketbase";
 import ProductTabs from "~/components/catalog/ProductTabs.vue";
 import CustomFields from "~/components/product/CustomFields.vue";
 import ProductDetails from "~/components/catalog/ProductDetails.vue";
 
 const route = useRoute();
 const pb = usePocketBase();
-const url = usePocketBaseUrl();
 const item = ref({});
-const qty = ref(1);
 const stock = ref({});
 
 const load = async () => {
@@ -45,13 +43,15 @@ const load = async () => {
     title: item.value.name + " - Produkt Ansicht",
     description: item.value.description
   });
+};
 
-  stock.value = (
+watch(() => item.value.id, async () => {
+  return (
       await pb.collection("product_stocks").getList(1, 1, {
         filter: 'product="' + item.value.id + '"',
       })
   ).items[0];
-};
+});
 
 onMounted(() => {
   load();
