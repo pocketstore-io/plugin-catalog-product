@@ -7,6 +7,7 @@
   },
   "product": {
     "stock": {
+      "warning": "Nicht mehr viel auf Lager.",
       "empty": "Momentan nicht auf Lager"
     }
   },
