@@ -8,11 +8,10 @@
       <h2 class="font-bold text-lg">{{ item.name }}</h2>
       <p class="text-sm">{{ item.description }}</p>
       <CustomFields v-if="item.config" :fields="item.config"/>
-      <section class="flex justify-between">
+      <section v-if="stock" class="flex justify-between">
         <ProductStock :quantity="stock.quantity"/>
         <ProductAddToCart :product="item" :qty="stock.qty" :stock="stock"/>
       </section>
-
     </div>
     <div class="col-span-6">
       <ProductDetails :identifier="item.id"/>
