@@ -6,6 +6,9 @@
     "add-to-cart": "In den Warenkorb legen"
   },
   "product": {
+    "gallery": {
+      "headline": "weitere Bilder"
+    },
     "stock": {
       "warning": "Nicht mehr viele auf Lager.",
       "empty": "Momentan nicht auf Lager"
