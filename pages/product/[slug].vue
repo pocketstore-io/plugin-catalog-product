@@ -12,6 +12,7 @@
         <ProductStock :quantity="stock.quantity"/>
         <ProductAddToCart :product="item" :qty="stock.qty" :stock="stock"/>
       </section>
+      <section v-else class="alert alert-warning block text-center">{{$t('catalog.product.not-in-stock')}}</section>
     </div>
     <div class="col-span-6">
       <ProductDetails :identifier="item.id"/>

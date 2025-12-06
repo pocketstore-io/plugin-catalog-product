@@ -16,7 +16,8 @@
   },
   "catalog": {
     "product": {
-      "in-stock": "Im Lager"
+      "in-stock": "Im Lager",
+      "not-in-stock": "Aktuell nicht im Lager"
     }
   }
 }
