@@ -13,7 +13,8 @@
     "stock": {
       "full": "Aktuell auf Lager",
       "warning": "Nicht mehr viele auf Lager.",
-      "empty": "Momentan nicht auf Lager"
+      "empty": "Momentan nicht auf Lager",
+      "stock-empty": "Momentan nicht auf Lager"
     }
   },
   "catalog": {
